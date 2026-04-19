@@ -2,6 +2,7 @@ import { Phone } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
 import { cn } from '@/lib/utils';
 import type { UserRole } from '@/types/api';
+import logo from "@/assets/logo.png"
 
 export interface NavItem {
   id: string;
@@ -32,7 +33,7 @@ export function Sidebar({ items, active, collapsed, onNav, onProfileClick }: Sid
       style={{ minWidth: collapsed ? 64 : 240 }}
     >
       <div className={cn('flex items-center gap-2.5 pt-5 pb-4', collapsed ? 'justify-center px-2' : 'px-5')}>
-        <img src="/logo.png" alt="EasyVoice" className="w-8 h-8 rounded-lg flex-shrink-0 object-cover" />
+        <img src={logo} alt="EasyVoice" className="w-8 h-8 rounded-lg flex-shrink-0 object-cover" />
         {!collapsed && <span className="text-lg font-semibold text-slate-900">EasyVoice</span>}
       </div>
 

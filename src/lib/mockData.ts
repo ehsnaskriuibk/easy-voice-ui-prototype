@@ -44,7 +44,7 @@ export const ASSISTANTS: AssistantConfig[] = [
     structured_context: {
       kind: 'medical_practice',
       location: {
-        address: { street1: 'Innrain 52', street2: null, postcode: '6020', city: 'Innsbruck', country: 'Austria' },
+        address: { addressline1: 'Innrain 52', addressline2: null, postcode: '6020', city: 'Innsbruck', country: 'Austria' },
         additional_info: { is_barrier_free: true, has_elevator: true, has_free_parking: true, parking_information: 'Free parking in front of building', directions: 'Near University of Innsbruck' },
       },
       opening_times: {

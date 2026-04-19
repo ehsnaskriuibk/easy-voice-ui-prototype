@@ -3,6 +3,7 @@ import { Phone } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
 import { cn } from '@/lib/utils';
 import type { UserRole } from '@/types/api';
+import logo from "@/assets/logo.png"
 
 const ROLES: { role: UserRole; label: string; desc: string }[] = [
   { role: 'client', label: 'Client', desc: 'Single assistant and phone number. View your own calls and configuration.' },
@@ -19,7 +20,7 @@ export function LoginPage() {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <div className="inline-flex items-center gap-3 mb-3">
-            <img src="/logo.png" alt="EasyVoice" className="w-12 h-12 rounded-xl object-cover" />
+            <img src={logo} alt="EasyVoice" className="w-12 h-12 rounded-xl object-cover" />
             <span className="text-2xl font-semibold text-slate-900">EasyVoice</span>
           </div>
           <p className="text-slate-500 text-sm">Choose a role to explore the dashboard</p>
